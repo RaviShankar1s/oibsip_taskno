@@ -1,0 +1,2224 @@
+
+/* Logo and IMAGE*/ 
+
+#logo{
+    margin: 3px 1px;
+}
+#logo img{
+    height: 69px;
+    margin: 3px 1px;
+}
+/*New Navbar and Search starting here*/
+.navbar{
+    height: 150%;
+}
+.navbar .menu-list{
+position: fixed;
+top: 0;
+left:-100%;
+
+height: 100vh;
+width: 100%;
+max-width: 400px;
+background: #222;
+display: block;
+padding: 40px 0;
+text-align: center;
+transition: all 0.3s ease;
+
+}
+.navbar .menu-list.active{
+    left: 0%;
+}
+.navbar .menu-list li{
+    margin-top: 45px;
+}
+    .navbar .menu-list li a{
+    font-size: 23px; /*23*/
+    }
+
+/* .navbar .menu-list i{
+    color:rgb(47, 85, 224);
+    } */
+
+.menu-list li{
+    list-style: none;
+    font-size:  1.0rem;
+    transition: 0.7s ease;
+    position: relative;
+    
+}
+.menu-list li::after{/*new style under line add*/
+    content: '';
+    height: 0;
+    width: 0;
+    background: none;
+    position: unset;
+    left: 0; /*0*/
+    bottom: 0; /*-10 */
+    transition: 0;
+}
+.menu-list li:hover::after{/*new style under line add*/
+    width: 0;
+}
+
+.icon{
+    display: block;
+    font-size: 45px;
+    cursor: pointer;
+}
+.icon.hide{
+display: none;
+}
+.icon.menu-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 45px;
+}
+/* phone menu scrolling hidden 
+body.disabledscroll{
+    overflow: hidden;
+}
+*/
+
+/* search section*/
+
+.rightNav{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 251, 251);
+    margin-right: 70px;
+    margin-left: 100px;
+    margin-top: 10%;
+    padding: 3px 6px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.search{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-color: rgb(253, 253, 253);
+    text-decoration: none;
+}
+.search:focus{
+    outline: none;
+}
+/*New Navbar and Search closing here*/
+
+/* Image slider starting here */
+
+.slideing{
+    width: 100%; /*1350px*/
+    height: 100%;
+    margin-top: 45px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%; /*1350px*/
+    height: 100%;
+}
+ /*css mannual navigation start  */
+.navigation-manual{
+    width: 100%;
+    margin-top: -30px; /*-40*/
+}
+.manual-btn{
+    padding: 5px;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+/* css automatic navigation start */
+.navigation-auto{
+    justify-content: center;
+    width: 100%;
+    margin-top: 470px;
+}
+.navigation-auto div{
+    
+    padding: 5px;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+/* image sliding phone css closeing here */
+
+
+/* scrolling Ke liye hai */
+.scrolls {
+    background-color: rgb(42, 0, 77);
+    border-radius: 0px;
+    margin-bottom: 180px;
+    color: #fff;
+    box-shadow: 10px 4px 10px -1px #000000;
+}
+
+.panda {
+    color: rgb(218, 207, 55);
+    word-spacing: 150px;
+}
+
+/* slider up to down ke liye*/
+.light-head{
+    font-size: 2rem;
+    color: rgb(154, 158, 224);
+    position: relative;
+    font-weight: bold;
+}
+.light-head::before{
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px var(rgb(251, 241, 124));
+    filter: blur(10px) brightness(0);
+    animation: flicker 4s linear forwards; /*2s*/
+    animation-delay: 1s;
+}
+
+.content{
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 300px; /*350px*/
+}
+.content p{
+    margin: 20px auto;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+.title{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.slider{
+    color: #ffc107;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+}
+
+.web{
+    padding: 15px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #ffc107;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #ffc107);
+    background-size: 200%;
+    background-position: left;
+    transition:  background-position 0.5s;
+}
+
+/* job section starting here*/
+.job{
+    margin-bottom: 10%;
+}
+.job img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+}
+/* job section starting here*/
+
+
+/* coming soon animation starting here */
+
+.comingsoon{
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url('../Images/comingsoon.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 120px;
+}
+.soon{
+    margin-top: 20px;
+    position: absolute;
+    padding: 0 5%;
+    color: #ffffff;
+}
+.on{
+    color: rgb(251, 222, 3);
+}
+.soon h1{/**/
+    font-size: 64px;
+    font-weight: 400;
+}
+.soon h1 q{
+    color: #ff375f;
+}
+.soon img{
+    width: 150px;
+    height: 150px;
+}
+
+.rocket{
+    width: 250px;
+    font-size: 5px;
+    position: absolute;
+    right: -15%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+.datetime{
+    color: #fff;
+    background-color: #10101e;
+    font-family: sans-serif;
+    width: 350px;
+    padding: 15px 10px;
+    border: 3px solid #2E94E3;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.datetime:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+}
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time span:not(:last-chid){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time span:last-child{
+    background-color: #2E94E3;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+/* home section*/
+#home{
+    flex-direction: column;
+    position: flex;
+    height: 250px; /*370*/
+    padding: 3px 68px;
+    justify-content: center;
+    align-items: center; 
+    
+
+}
+#home::before{
+    height: 480px;
+    position: absolute;
+    
+}
+#home p{
+    font-size: 13px;
+}
+/* services Section*/
+#services{
+    flex-direction: column;
+}
+#services .box{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+/*query section*/
+#query{
+    position: flex;
+}
+.customer img{
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+#query-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+}
+
+#query::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../Images/help.jpg') no-repeat center center/cover;
+}
+#query-box form{
+    
+    width: 60%;
+    
+}
+
+/*clients section*/
+#client-section{
+    height: 470px;
+    position: flex;
+}
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 66px;
+    padding: 2px 2px;
+    height: auto;
+}
+
+/* query ke liye used*/
+
+.harsh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+    /* about ke liye */
+    .bhai{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 15px 0px;
+    
+    }
+    .bhaiya{
+        font-size: 0.9rem;
+        padding: 0px 50px;
+    }
+    .about::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 205%;
+        z-index: -1;
+        opacity: 0.4;
+        /* background: url('../Images/4.jpg') ; */
+        background-position: center;
+            background-size: cover;
+            position: absolute;
+        top: 0px;
+    }
+    
+
+
+.checkbox{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin: 0px 5px;
+}
+
+.order{
+    text-align: center;
+    padding: 0.75rem;
+    background-color: rgb(205, 203, 236);
+    color: #f3f3f3;
+    margin: 50px 60px;
+    font-size: 1.1rem ;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+/*services  Section*/
+#services{
+    height: 1120px;
+    flex-direction: column;
+}
+#services .box{
+    height: 310px;
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+.servicemom{
+    font-family: serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 16px;
+    margin-top: 100px;
+
+}
+
+.m{
+    font-size: 0.8rem;
+}
+.l{
+    font-size: 0.8rem;
+ }
+
+ /*services  Section*/
+#support{
+    height: 900px;
+    flex-direction: column;
+}
+#support .box{
+    height: 380px;
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+/*contact us section*/
+#contact-box form{
+    width: 40%;
+}
+
+/* Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 14px;
+}
+
+
+/*facebook instragram and etc link */
+.foot{
+    font-size: 0.7rem;
+}
+.fb{
+    flex-direction: column;
+    height: 25px;
+}
+
+    .gupta{
+    margin: 5px 4px;
+}
+.gupta img{
+    height: 20px;
+    margin: 3px 4px;
+}
+/*utility classes*/
+.h-primary{
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+
+/* login ke liye*/
+
+.vivo{ 
+    height: 150%;
+    width: 100%;
+    margin-top: 0%;
+}
+.vivo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.55)),url('../Images/3.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+.button-boxs{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    
+}
+.toggle-btns{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+}
+#btns{
+top: 0;
+left: 0;
+position: absolute;
+width: 110px;
+height: 100%;
+background: linear-gradient(to right,#ff105f,#ffad06);
+border-radius: 30px;
+transition: 0.5s;
+
+}
+.input-groups{
+top: 180px;
+position: absolute;
+width: 280px;
+transition: 0.5s;
+
+}
+.input-fields{
+width: 100%;
+padding: 10px 0px;
+margin: 5px 0;
+border-left: 0;
+border-top: 0;
+border-right: 0;
+border-bottom: 1px solid #999;
+outline: none;
+background: transparent;
+}
+
+.check-boxs{
+margin: 30px 10px 30px 0;
+}
+.agree{
+    color: #8b76bd;
+font-size: 12px;
+bottom: 64px;
+position: absolute;
+}
+/* span{
+color: #8b76bd;
+font-size: 12px;
+bottom: 64px;
+position: absolute;
+} */
+#login{
+left: 50px;
+}
+#register{
+left: 450px;
+} 
+
+.form-boxs{
+    width: 400px;
+    height: 580px; /*540px*/
+    position: absolute;
+    margin: 20% auto;
+    margin-left: 30%;
+    padding: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.submit-btns{
+    width: 85%;
+    padding: 10px 30px;
+    display: block;
+    margin-left: 20%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    }
+/*Track starting here*/
+
+.real{
+    height: 190%;
+    width: 100%;
+    top: 0;
+    content: "";
+    position: absolute;
+
+    background-size: cover;
+    background-position: center;
+}
+#Help{
+    font-size: 14px;
+    color: rgb(255, 229, 80);
+    margin: 0px 5px;
+    text-align: center;
+}
+.track{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding-top: 0px;
+    margin-left: 00px;
+    margin-right: 0x;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+}
+.track::after{
+    content: '';
+    background-color: #303ef7;
+    width: 130px;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Term and conditions phone css starting here */
+
+/* .faqheading{ */
+    .faqheading{
+        width: 100%;
+        height: 300px;
+        margin: 4% 0px;
+        /* padding: 5px; */
+        overflow: hidden;
+        display: block;
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url('../Images/startup.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .faq{
+        
+        margin-bottom: 70%;
+    }
+    .faq-point{
+        font-size: 15px;
+        color: #ffffff;
+        padding-left: 30px;
+    }
+    .faq-p{
+        font-size: 14px;
+        margin: 0px 10px;
+        padding-left: 30px;
+        color: #30f7f7;
+    }
+    .faqdoor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        padding-top: 10px;
+        margin-left: 00px;
+        margin-right: 0x;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #ececec;
+        position: relative;
+    }
+    .faqdoor::after{
+        content: '';
+        background-color: #303ef7;
+        width: 280px;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /* Term and conditions phone css closeing here */
+                    /*Chat Bot starting here*/
+.chat_icon{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    font-size: 60px;
+    color: rgb(153, 1, 255);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 250ms ease-in-out;
+}
+.chat_icon:active{
+    transform: scale(1.20);
+/* transform: rotate(30deg); */
+}
+.chat_icon img{
+    height: 65px;
+    width: 65px;
+    /* border-radius: 50%; */
+    
+}
+.chat_icon p{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    font-size: 15px;
+    color: rgb(153, 1, 255);
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    transition: none;
+}
+.chat_icon.heart{
+    color: red;
+}
+
+.online{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 20px;
+    background-color: #77b3d4;
+    padding: 15px;
+}
+.online img{
+    height: 45px;
+    width: 45px;
+}
+.onlinechat{
+    color: #fff;
+    padding: 15px;
+}
+.onlinechat p{
+    color: #008000;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    background: #e7e7e7;/*linear-gradient(to bottom, #bcbcbc 6%, #e7e7e7 20%); */
+    width: 300px;
+    height: 70vh;
+    border-radius: 8px;
+    padding: 0; /*30px*/
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.chatbot-box.active{
+    transform: scaleY(1);
+}
+
+#chatList{
+    height: calc(70vh - 120px);
+    overflow-x: auto;
+    position: relative;
+    -ms-overflow-style:none;
+    /* scroll-width: 0; */
+    /* scroll-width: 0; */
+
+}
+#chatList ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+}
+#chatList ul li.admin-message{
+    background-color: white;
+    color: #515151;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 20px;
+    margin: 15px 30% 15px 5px;
+    text-transform: capitalize;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+#chatList ul li.client-message{
+    background-color: #59ba00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px 0 20px 20px;
+    margin: 15px 5px 15px 30%;
+    text-transform: capitalize;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+.message-box-wrap{
+    position: relative;
+    margin-top: 20px;
+}
+/* .message-box input[type="text"],
+.message-box select{
+    height: 20px;
+    padding: 5px;
+    line-height: 20px;
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    border: 1px solid #bcb3b3;
+} */
+.message-box input[type="text"]{
+    height: 20px;
+    padding: 5px;
+    line-height: 20px;
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    border: 1px solid #bcb3b3;
+    margin-top: 4px;
+} 
+
+.message-box select{
+    height: 30px;
+    padding: 5px;
+    line-height: 20px;
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    border: 1px solid #bcb3b3;
+    margin-top: 5px;
+}
+.message-box button{
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    line-height: 20px;
+    border-radius: 10px;
+    border: 1px solid #bcb3b3;
+}
+#send{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 0;
+    top: 0; 
+    color: #fff;
+    border-radius: 50%;
+    background-color: #04d004;
+    border: 0 !important;
+    outline: 0 !important;
+}
+.admin-client-message-wrap,
+#submit_info_form{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*online new chatbot */
+
+
+@media only screen and (max-width:1080px){/*Nest hub mobile*/
+    .about::before{
+        height: 195%;
+    } 
+    /*Query Ke Liye hai*/
+.query{
+    height: 1805px;
+}
+.navbar{
+    height: 12%;
+}
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+    width: 300px;
+    height: 70vh;
+    border-radius: 8px;
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+}
+
+@media only screen and (max-width:912px){ /* surface 7 pro mobile*/
+    
+    .about::before{
+        height: 130%;
+    } 
+    .about{
+        height: 1460px;
+    }
+    #address::before{
+        height: 15%;
+    } 
+
+    /*utility classes*/
+
+    .h-primary{
+        font-size: 1.8rem;
+}
+    .harsh{
+        font-size: 1.8rem;
+}
+.bhaiya{
+    font-size: 1.8rem;
+    padding: 0px 50px;
+}
+
+#home p{
+    font-size: 23px;
+}
+.m{
+    font-size: 1.2rem;
+}
+/* Tracking And login */
+
+
+/*Query Ke Liye hai*/
+.query{
+    margin-top: 10%;
+    height: 1820px;
+}
+.form-query{
+    margin-left: 30%;
+}
+
+#customerhelp{
+    font-size: 24px;
+}
+
+.navbar{
+    height: 6%;
+}
+
+/* slider up to down ke liye*/
+.title{
+    font-size: 50px;
+}
+/* Chat bot ke liye hai */
+.chat_icon{
+    right: 30px;
+}
+
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 500px;
+    height: 60vh;
+    border-radius: 8px;
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+#chatList{
+    height: calc(58vh - 120px);
+    overflow-x: auto;
+    position: relative;
+    -ms-overflow-style:none;
+    /* scroll-width: 0; */
+    /* scroll-width: 0; */
+
+}
+.online{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    background-color: #77b3d4;
+    padding: 15px;
+}
+.online img{
+    height: 55px;
+    width: 55px;
+}
+.onlinechat{
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em
+}
+.onlinechat p{
+    color: #008000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+}
+
+@media only screen and (max-width:820px)  { /*Ipad air mobile*/
+
+    /* coming soon start here */
+    .soon h1{/**/
+        font-size: 54px;
+        font-weight: 400;
+        }
+        .soon img{
+        width: 150px;
+        height: 150px;
+        }
+        .rocket{/**/
+        width: 250px;
+        font-size: 5px;
+        position: absolute;
+        right: -30%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+        }
+        /* coming soon closing here */
+    
+    .about::before{
+        height: 152%;
+    } 
+/*Query Ke Liye hai*/
+
+.query{
+    height: 154%;
+}
+.form-query{
+    
+    margin-left: 27%;
+    
+}
+
+/* Login and track*/
+.form-boxs{
+margin-left: 26%;
+
+}
+
+.navbar{
+    height: 7%;
+}
+#Help{
+    font-size: 20px;
+}
+
+.faqheading{
+    width: 100%;
+    height: 360px;
+}
+
+/*Chat Bot starting here*/
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    width: 500px;
+    height: 70vh;
+    border-radius: 8px;
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+#chatList{
+    height: calc(68vh - 120px);
+    overflow-x: auto;
+    position: relative;
+    -ms-overflow-style:none;
+    /* scroll-width: 0; */
+    /* scroll-width: 0; */
+
+}
+
+/* job section starting here*/
+.job img{
+    height: 30vh;
+}
+
+}
+@media only screen and (max-width:768px)  { /* ipad mini mobile*/
+     /* coming soon start here */
+        .soon h1{/**/
+        font-size: 50px;
+        font-weight: 400;
+        }
+        /* coming soon closing here */
+    
+    .about{
+        height: 1560px;
+    }
+    .about::before{
+        height: 187%;
+    } 
+    /*Query Ke Liye hai*/
+.query{
+    height: 1820px;
+}
+
+#address::before{
+    height: 18%;
+}
+}
+@media only screen and (max-width:540px)  { /* surface duo mobile*/
+    /* coming soon start here */
+    .comingsoon{
+        width: 100%;
+        height: 270px;
+        margin-bottom: 120px;
+    }
+    .soon h1{/**/
+        font-size: 34px;
+        font-weight: 400;
+        }
+        .soon img{
+        width: 100px;
+        height: 100px;
+        }
+        .rocket{/**/
+        width: 250px;
+        font-size: 5px;
+        position: absolute;
+        right: -30%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+        }
+        
+        .datetime{
+            width: 200px;
+        }
+        .date{
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .time{
+            font-size: 15px;
+        }
+        .time span:last-child{
+            font-size: 10px;
+            font-weight: 600;
+        }
+        
+        /* coming soon closing here */
+    
+
+    /* Logo and IMAGE*/ 
+#logo img{
+    height: 55px;
+    margin: 3px 1px;
+}
+.navbar .menu-list{
+    position: fixed;
+    top: 0;
+    left:-100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 300px;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    }
+    .icon.cancel-btn{
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 30px;
+    }
+    /* search section*/
+    
+    .rightNav{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(255, 251, 251);
+        margin-right: 26px;
+        margin-left: 60px;
+        margin-top: 10%;
+        padding: 3px 6px;
+        border-radius: 7px;
+        text-decoration: none;
+    }
+
+.about{
+    height: 1360px;
+}
+    .about::before{
+        height: 235%;
+    } 
+
+.bhaiya{
+    font-size: 1.2rem;
+    padding: 0px 50px;
+}
+.harsh{
+    font-size: 1.4rem;
+}
+#address::before{
+    height: 24%;
+} 
+#home p{
+    font-size: 13px;
+}
+.navbar{
+    height: 9%;
+}
+.m{
+    font-size: .8rem;
+}
+/* slider up to down ke liye*/
+
+.light-head{
+    font-size: 1.5rem;
+}
+
+.scrolls {
+    margin-top: 150px; /*250px*/
+}
+.content{
+    width: 100%;
+    top: 50%;
+    margin-top: 220px;
+}
+.title{
+    font-size: 35px;
+}
+
+.scrolls h1{
+    font-size: 25px;
+}
+
+/* Login and track*/
+
+.vivo{ 
+    height: 850px;
+}
+.form-boxs{
+    width: 300px;
+    height: 560px; /*520px*/
+    margin: 40% auto;
+    margin-left: 23%;
+}
+.submit-btns{
+    width: 45%;
+    margin-left: 20%;
+    }
+    /*Query Ke Liye hai*/
+    .query{
+    height: 255%;
+}
+.querybtn{
+    margin: 0 10px;
+}
+#customerhelp{
+    font-size: 18px;
+    color: rgb(255, 242, 0);
+    margin: 0px 5px;
+    text-align: center;
+}
+    .form-query{
+        width: 300px;
+        height: 700px;
+        margin: 4% auto;
+        margin-left: 23%;
+        padding: 5px;
+    }
+    /* service*/
+#services{
+        height: 1402px;
+        margin: 34px;
+        display: flex;
+    }
+#services .box{
+        border: 2px solid rgb(0, 0, 0);
+        height: 320px;
+        padding: 34px;
+        margin: 6px 65px;
+        border-radius: 23px;
+        
+        margin-bottom: 40px;
+        box-shadow: 10px 6px 10px -1px #000000;
+    }
+    /* suport*/
+#support .box{
+    border: 2px solid rgb(0, 0, 0);
+    height: 350px;
+    padding: 34px;
+    margin: 6px 65px;
+    border-radius: 23px;
+    
+    margin-bottom: 40px;
+    box-shadow: 10px 6px 10px -1px #000000;
+    
+}
+.faq{
+    margin-bottom: 130%;
+}
+.faqheading{
+    width: 100%;
+    height: 400px;
+}
+/* Image slider starting here */
+
+.slideing{
+    width: 100%; /*1350px*/
+    height: 90%;
+    margin-top: 35px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%; /*1350px*/
+    height: 90%;
+}
+/*css mannual navigation start  */
+.navigation-manual{
+    width: 100%;
+    margin-top: -70px; /*-40*/
+}
+/* css automatic navigation start */
+.navigation-auto{
+    width: 100%;
+    margin-top: 430px;
+}
+
+/*Chat Bot starting here*/
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    background: #e7e7e7;/*linear-gradient(to bottom, #bcbcbc 6%, #e7e7e7 20%); */
+    width: 300px;
+    height: 68vh;
+    border-radius: 8px;
+    padding: 0; /*30px*/
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.online{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 20px;
+    background-color: #77b3d4;
+    padding: 15px;
+}
+.online img{
+    height: 45px;
+    width: 45px;
+}
+.onlinechat{
+    color: #fff;
+    padding: 15px;
+}
+.onlinechat p{
+    color: #008000;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+/* job section starting here*/
+.job{
+    margin-bottom: 0%;
+}
+.job img{
+    height: 30vh;
+}
+}
+@media only screen and (max-width:414px)  { /* iphone xr mobile*/
+    /* coming soon start here */
+    .comingsoon{
+        width: 100%;
+        height: 280px;
+        margin-bottom: 120px;
+    }
+    .soon h1{/**/
+        font-size: 34px;
+        font-weight: 400;
+        }
+        .soon img{
+        width: 80px;
+        height: 80px;
+        }
+        .rocket{/**/
+        width: 250px;
+        font-size: 5px;
+        position: absolute;
+        right: -5%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+        }
+        
+        
+        /* coming soon closing here */
+    /* Logo and IMAGE*/ 
+#logo img{
+    height: 65px;
+    margin: 3px 1px;
+}
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left:-100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+        }
+        .icon.cancel-btn{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            font-size: 30px;
+        }
+        /* search section*/
+        
+        .rightNav{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 251, 251);
+            margin-right: 26px;
+            margin-left: 60px;
+            margin-top: 10%;
+            padding: 3px 6px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .about{
+            height: 1500px;
+        }
+    .about::before{
+        height: 205%;
+    } 
+
+    .ordernext{ 
+    /*margin: 50px 100px; 135px*/
+    text-align: unset;
+    padding: 6px 65px; /*120px*/
+    margin-left: 140px;
+}
+.track{
+    font-size: 1.4rem;
+    
+}
+
+
+/* Login and track*/
+.form-boxs{
+    margin: 35% 13%;
+    padding: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.vivo::before{
+    height: 143%;
+}
+.real::before{
+    height: 100%;
+}
+/* .navbar{
+    height: 9%;
+} */
+.servicemom{
+        font-family: serif;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 16px;
+        margin-top: 180px;
+        
+    }
+    .m{
+        font-size: 0.9rem;
+    }
+/* slider up to down ke liye*/
+.light-head{
+    font-size: 1.2rem;
+}
+.scrolls {
+    margin-top: 100px;/*250px*/
+}
+.content{
+    width: 100%;
+    top: 50%;
+    margin-top: 120px; /*180*/
+}
+.title{
+    font-size: 28px;
+}
+.scrolls h1{
+    font-size: 20px;
+}
+.web{
+    padding: 15px 15px;
+    margin: 20px;
+    font-size: 16px;
+}
+
+/* Login and track*/
+
+.vivo{ 
+    height: 650px;
+}
+.real{
+    height: 1100px;
+    
+}
+.form-boxs{
+    width: 300px;
+    height: 570px; /*520px*/
+    margin: 40% auto;
+    margin-left: 13%;
+}
+.submit-btns{
+    width: 45%;
+    margin-left: 20%;
+    }
+    #Help{
+        font-size: 14px;
+    }
+    /*Query Ke Liye hai*/
+    .query{
+    height: 201%;
+}
+.querybtn{
+    margin: 0 10px;
+}
+    .form-query{
+        width: 300px;
+        height: 700px;
+        margin: 4% auto;
+        margin-left: 13%;
+        padding: 5px;
+    }
+    #customerhelp{
+        font-size: 16px;
+    }
+    /* service*/
+#services{
+    height: 1602px;
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    height: 520px;
+    padding: 34px;
+    margin: 6px 25px;
+    border-radius: 23px;
+    
+    margin-bottom: 40px;
+    box-shadow: 10px 6px 10px -1px #000000;
+}
+/* suport*/
+#support{
+    height: 1202px;
+    margin: 34px;
+    display: flex;
+}
+#support .box{
+border: 2px solid rgb(0, 0, 0);
+height: 540px;
+padding: 34px;
+margin: 6px 25px;
+border-radius: 23px;
+
+margin-bottom: 40px;
+box-shadow: 10px 6px 10px -1px #000000;
+
+}
+.order{
+    text-align: center;
+    padding: 0.75rem;
+    background-color: rgb(205, 203, 236);
+    color: #f3f3f3;
+    margin: 60px 40px;
+    font-size: 1.1rem ;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+#address{
+    margin-top: 60%;
+} 
+.faq{
+    margin-top: 20%;
+    margin-bottom: 200%;
+}
+.faqheading{
+    width: 100%;
+    height: 500px;
+}
+/* Image slider starting here */
+
+.slideing{
+    width: 100%; /*1350px*/
+    height: 70%;
+    margin-top: 50px;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%; /*1350px*/
+    height: 70%;
+}
+/*css mannual navigation start  */
+.navigation-manual{
+    width: 100%;
+    margin-top: -180px; /*-40*/
+}
+/* css automatic navigation start */
+.navigation-auto{
+    width: 100%;
+    margin-top: 320px;
+}
+
+/*Chat Bot starting here*/
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    background: #e7e7e7;/*linear-gradient(to bottom, #bcbcbc 6%, #e7e7e7 20%); */
+    width: 300px;
+    height: 50vh;
+    border-radius: 8px;
+    padding: 0; /*30px*/
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+#chatList{
+    height: calc(50vh - 120px);
+    overflow-x: auto;
+    position: relative;
+    -ms-overflow-style:none; 
+}
+/* job section starting here*/
+.job{
+    margin-bottom: 0%;
+}
+.job img{
+    height: 20vh;
+}
+}
+
+@media only screen and (max-width:412px)  { /* samsung galaxy s20 & samsung a51 mobile*/
+    /* Logo and IMAGE*/ 
+#logo img{
+    height: 60px;
+    margin: 3px 1px;
+}
+    .about::before{
+        height: 200%;
+    } 
+    .navbar{
+        height: 8.5%;
+    }
+    
+}
+@media only screen and (max-width:393px) { /* pixel 5 mobile*/
+    /* coming soon start here */
+    .soon h1{/**/
+        font-size: 30px;
+        font-weight: 400;
+        }
+        .rocket{/**/
+        width: 250px;
+        font-size: 5px;
+        position: absolute;
+        right: -12%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+        }
+        /* coming soon closing here */
+        .about{
+            height: 1599px;
+        }
+    .about::before{
+        height: 226%;
+    } 
+    .ordernext{ 
+    text-align: unset;
+    padding: 6px 55px; 
+    margin-left: 135px;
+}
+
+.navbar{
+    height: 8%;
+} 
+    .m{
+        font-size: 0.8rem;
+    }
+/* slider up to down ke liye*/
+.light-head{
+    font-size: 1rem;
+}
+.title{
+    font-size: 25px;
+}
+.content p{
+    font-size: 15px;
+    margin: 0 45px;
+}
+.scrolls {
+    margin-top: 70px;
+}
+.web{
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* Login and track*/
+
+.form-boxs{
+    width: 300px;
+    height: 570px; /*520px*/
+    margin: 40% auto;
+    margin-left: 11%;
+}
+.submit-btns{
+    width: 45%;
+    margin-left: 20%;
+    }
+    #Help{
+        font-size: 14px;
+    }
+    /*Query Ke Liye hai*/
+.query{
+        height: 212%;
+    }
+.querybtn{
+    margin: 0 10px;
+}
+    .form-query{
+        width: 300px;
+        height: 700px;
+        margin: 4% auto;
+        margin-left: 10%;
+        padding: 5px;
+    }
+    #customerhelp{
+        font-size: 16px;
+    }
+    /* service*/
+#services{
+    height: 1452px; /*1602px*/
+    margin: 4px;   /*34px*/
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    height: 350px;
+    padding: 34px;
+    margin: 6px 25px;
+    border-radius: 23px;
+    margin-bottom: 40px;
+    box-shadow: 10px 6px 10px -1px #000000;
+}
+/* suport*/
+
+#support .box{
+border: 2px solid rgb(0, 0, 0);
+height: 550px;
+padding: 34px;
+margin: 6px 25px;
+border-radius: 23px;
+margin-bottom: 40px;
+box-shadow: 10px 6px 10px -1px #000000;
+
+}
+/* Image slider starting here */
+
+.slideing{
+    margin-top: 40px;
+}
+.icon{
+    font-size: 35px;
+}
+}
+
+@media only screen and (max-width:375px)  { /* iphone se mobile*/
+     /* coming soon start here */
+        .soon h1{/**/
+        font-size: 30px;
+        font-weight: 400;
+        }
+        .rocket{/**/
+        width: 250px;
+        font-size: 5px;
+        position: absolute;
+        right: -6%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+        }
+        .datetime{
+            width: 160px;
+        }
+        .date{
+            font-size: 9px;
+            font-weight: 600;
+        }
+        .time{
+            font-size: 14px;
+        }
+        .time span:last-child{
+            font-size: 9px;
+            font-weight: 600;
+        }
+        /* coming soon closing here */
+    /* Logo and IMAGE*/ 
+#logo img{
+    height: 45px;
+    margin: 3px 1px;
+}
+    .navbar .menu-list{
+        position: fixed;
+        top: 0;
+        left:-100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 250px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+        }
+        .navbar .menu-list li a{
+            font-size: 14px; /*23*/
+            }
+        .icon.cancel-btn{
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            font-size: 25px;
+        }
+        /* search section*/
+        
+        .rightNav{
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 251, 251);
+            margin-right: 10px;
+            margin-left: 20px;
+            margin-top: 10%;
+        }
+        .about{
+            height: 1500px;
+        }
+    .about::before{
+        height: 275%;
+    } 
+    .bhaiya{
+        font-size: 1.0rem;
+        padding: 0px 50px;
+    }
+
+#address::before{
+    height: 28%;
+} 
+
+/*Query Ke Liye hai*/
+.query{
+    height: 270%;
+}
+
+
+/* Login and track*/
+.form-boxs{
+    margin: 25% 9%;
+    padding: 5px;
+    background: #fff;
+    overflow: hidden;
+}
+.vivo::before{
+    height: 112%;
+}
+.real::before{
+    height: 100%;
+    
+}
+/*
+  */
+.order{
+    margin: 60px 20px;
+}
+/* service*/
+#services{
+    height: 1602px;
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(0, 0, 0);
+    height: 450px;
+    padding: 34px;
+    margin: 6px 25px;
+    border-radius: 23px;
+    
+    margin-bottom: 40px;
+    box-shadow: 10px 6px 10px -1px #000000;
+}
+.slideing{
+    margin-top: 20px;
+}
+.web{
+    padding: 8px 8px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+/*Chat Bot starting here*/
+.chatbot-box{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    background: #e7e7e7;/*linear-gradient(to bottom, #bcbcbc 6%, #e7e7e7 20%); */
+    width: 250px;
+    height: 60vh;
+    border-radius: 8px;
+    padding: 0; /*30px*/
+    font-size: 12px; /*16px*/
+    box-shadow: 0 0 11px rgba(0,0,0,0.9);
+    z-index: 100000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+#chatList{
+    height: calc(60vh - 120px);
+    overflow-x: auto;
+    position: relative;
+    -ms-overflow-style:none; 
+}
+/* job section starting here*/
+.job{
+    margin-bottom: 0%;
+}
+.job img{
+    height: 20vh;
+}
+}
+
+
+@media only screen and (max-width:360px)  { /* samsung galaxy s8+ mobile*/
+
+    /* Logo and IMAGE*/ 
+#logo img{
+    height: 60px;
+    margin: 3px 1px;
+}
+    .about::before{
+        height: 248%;
+    } 
+    .navbar{
+        height: 9%;
+    }
+    
+    .m{
+            font-size: 0.8rem;
+        }
+    /* slider up to down ke liye*/
+    .scrolls {
+        margin-top: 120px;
+    }
+    .scrolls h1{
+        font-size: 18px;
+    }
+    .content{
+        margin-top: 10px; /*100px*/
+    }
+    .title{
+        font-size: 25px;
+    }
+    .web{
+        padding: 15px 15px;
+        margin: 35px;
+        font-size: 16px;
+    }
+    .web{
+        padding: 6px 6px;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    
+    /* Login and track*/
+    
+    .vivo{ 
+        height: 680px;
+    }
+    .real{
+        height: 1100px;
+        
+    }
+    .form-boxs{
+        width: 250px;
+        height: 560px; /*480px*/
+        margin: 40% auto;
+        margin-left: 13%;
+    }
+    .submit-btns{
+        width: 45%;
+        margin-left: 8%;
+        }
+        #Help{
+            font-size: 12px;
+        }
+        /*Query Ke Liye hai*/
+        .query{
+        height: 243%;
+    }
+    .querybtn{
+    margin: 0 -4px;
+    }
+        .form-query{
+            width: 250px;
+            height: 680px;
+            margin: 4% auto;
+            margin-left: 14%;
+            padding: 5px;
+        }
+        #customerhelp{
+            font-size: 16px;
+        }
+
+        /* service*/
+    #services{
+        height: 1802px;
+    }
+    #services .box{
+        border: 2px solid rgb(0, 0, 0);
+        height: 460px;
+        padding: 34px;
+        margin: 6px 25px;
+        border-radius: 23px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 40px;
+        box-shadow: 10px 6px 10px -1px #000000;
+    }
+    /* suport*/
+    
+    #support .box{
+    height: 550px;
+    padding: 34px;
+    margin: 6px 25px;
+    margin-bottom: 40px;
+    }
+    .order{
+        text-align: center;
+        padding: 0.75rem;
+        background-color: rgb(205, 203, 236);
+        color: #f3f3f3;
+        margin: 60px 30px;
+        font-size: 1.1rem ;
+        border-radius: .25rem;
+        cursor: pointer;
+    }
+    /* Image slider starting here */
+
+.slideing{
+    width: 100%; /*1350px*/
+    height: 55%;
+    margin-top: 35px;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%; /*1350px*/
+    height: 55%;
+}
+/*css mannual navigation start  */
+.navigation-manual{
+    width: 100%;
+    margin-top: -250px; /*-40*/
+}
+/* css automatic navigation start */
+.navigation-auto{
+    width: 100%;
+    margin-top: 250px;
+}
+}
+/* @media only screen and (max-width:280px){
+    
+    .about::before{
+        height: 253%;
+    }
+    .order{
+        
+        padding: 4px 20px;
+        margin: 15px 10px;
+    }
+    
+    .order2{
+        padding: 4px 20px;
+        margin: 5px 10px;
+    }
+    #support .box{
+        height: 470px;
+    }
+    #services .box{
+        height: 410px;
+    }
+    #services .box img{
+        height: 80px;
+        margin: auto;
+        display: block;
+    }.bhaiya{
+        font-size: 0.9rem;
+        padding: 0px 50px;
+    }
+    .enquiryform::before{
+        height: 144%;
+    } 
+    /* Footer 
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-size: 14px;
+    
+    
+
+}*/
+
+
+
